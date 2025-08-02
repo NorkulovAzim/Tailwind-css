@@ -8,7 +8,7 @@
   </head>
 
   <body class="font-sans">
-    <div class="fixed bottom-215 right-10 z-50">
+    <!-- <div class="fixed bottom-10 right-4 sm:right-6 xl:right-10 z-50">
       <button
         class="bg-emerald-800 hover:bg-blue-800 focus:ring-emerald-400 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-emerald-900 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-blue-800 text-white"
         type="button"
@@ -18,9 +18,9 @@
       >
         Показать контактную форму
       </button>
-    </div>
+    </div> -->
 
-    <div
+    <!-- <div
       id="drawer-contact"
       class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-900"
       tabindex="-1"
@@ -123,120 +123,131 @@
       <p class="text-sm text-gray-500 dark:text-gray-400">
         <a href="#" class="hover:underline">+99899-99-777 77 77</a>
       </p>
-    </div>
+    </div> -->
 
-    <section class="container mx-auto flex pt-[100px]">
-      <div class="pt-[200px]">
-        <h1 class="text-5xl font-bold">
+    <section
+      class="container mx-auto flex flex-col-reverse lg:flex-row items-center justify-between pt-16 px-4 sm:px-6 lg:px-8"
+    >
+      <div class="mt-12 lg:mt-0 lg:max-w-xl">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
           Поставщик Дальнего <br />
           Востока
         </h1>
 
-        <p class="text-zinc-600 mt-[30px]">
+        <p class="text-zinc-600 mt-6 text-base sm:text-lg">
           Наши клиенты получают полный спектр услуг по работе с Китаем. Начиная
           с подбора производителя заканчивая доставкой товара до двери.
           Настолько прозрачных сделок с Китаем вы еще не осуществляли.
         </p>
 
-        <button class="font-bold mt-[50px] border-b-3 border-yellow-500">
+        <button
+          class="font-bold mt-8 border-b-4 border-yellow-500 text-yellow-700 hover:text-yellow-600 transition-colors"
+        >
           Узнать больше
         </button>
       </div>
 
-      <video autoplay muted loop playsinline class="w-[700px] h-auto">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        class="w-full max-w-md sm:max-w-lg lg:max-w-xl h-auto"
+      >
         <source src="./img/car-11.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </section>
 
     <section
-      class="container mx-auto p-[10px] border-none mt-[80px] self-center flex rounded-lg bg-zinc-50 rounded-3xl"
+      class="container mx-auto mt-20 px-4 py-10 bg-zinc-50 rounded-3xl shadow-lg"
     >
       <div
-        class="grid grid-cols-3 grid-rows-0 gap-10 justify-self-center self-center p-[50px] shadow-xl"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 p-6 sm:p-10"
       >
-        <div class="border-r-1 border-Zinc-50">
-          <img class="justify-self-start" src="./img/icon-1.svg" alt="" />
-          <h2 class="text-start font-bold mt-[20px]">
+        <div class="border-r lg:border-r border-zinc-200 pr-4">
+          <img src="./img/icon-1.svg" alt="Icon 1" class="mb-4" />
+          <h2 class="text-start font-bold text-lg mb-2">
             Поиск производителей по товару
           </h2>
-          <p class="mt-[10px]">
+          <p class="text-zinc-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod incididunt ut.
           </p>
         </div>
-        <div class="border-r-1 border-Zinc-50">
-          <img class="justify-self-start" src="./img/icon-2.svg" alt="" />
-          <h2 class="text-start font-bold mt-[20px]">
-            Поиск производителей по товару
-          </h2>
-          <p class="mt-[10px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod incididunt ut.
-          </p>
-        </div>
-        <div class="">
-          <img class="justify-self-start" src="./img/icon-3.svg" alt="" />
-          <h2 class="text-start font-bold mt-[20px]">
-            Поиск производителей по товару
-          </h2>
-          <p class="mt-[10px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod incididunt ut.
-          </p>
-        </div>
-      </div>
-    </section>
 
-    <section class="container mx-auto mt-[80px]">
-      <div>
+        <div class="border-r lg:border-r border-zinc-200 pr-4">
+          <img src="./img/icon-2.svg" alt="Icon 2" class="mb-4" />
+          <h2 class="text-start font-bold text-lg mb-2">
+            Проверка надежности поставщика
+          </h2>
+          <p class="text-zinc-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod incididunt ut.
+          </p>
+        </div>
+
         <div>
-          <div class="flex justify-center">
-            <img class="w-full" src="./img/why us.svg" alt="" />
-          </div>
+          <img src="./img/icon-3.svg" alt="Icon 3" class="mb-4" />
+          <h2 class="text-start font-bold text-lg mb-2">
+            Организация логистики и доставки
+          </h2>
+          <p class="text-zinc-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod incididunt ut.
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="container mx-auto mt-20 rounded-lg bg-zinc-50 rounded-3xl">
+    <section class="container mx-auto mt-20 px-4">
+      <div class="flex justify-center">
+        <img src="./img/why us.svg" alt="Почему мы" class="w-full h-auto" />
+      </div>
+    </section>
+
+    <section class="container mx-auto mt-20 px-4 rounded-3xl bg-zinc-50">
       <div
-        class="grid grid-cols-2 grid-rows-1 gap-20 justify-self-center self-center p-[50px] shadow-3xl rounded-3xl"
+        class="grid grid-cols-1 sm:grid-cols-2 gap-10 p-6 sm:p-10 lg:p-12 rounded-3xl shadow-xl"
       >
-        <div class="flex items-start gap-4">
-          <img src="./img/icon-5.svg" alt="" class="w-20 h-20" />
-          <div class="flex flex-col font-bold">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p class="font-normal mt-[10px]">
+        <div class="flex items-start gap-6">
+          <img src="./img/icon-5.svg" alt="Icon 5" class="w-20 h-20" />
+          <div class="flex flex-col">
+            <h2 class="font-bold text-lg">Lorem ipsum dolor sit amet</h2>
+            <p class="mt-2 text-zinc-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod ut.
             </p>
           </div>
         </div>
-        <div class="flex items-start gap-4">
-          <img src="./img/icon-6.svg" alt="" class="w-20 h-20" />
-          <div class="flex flex-col font-bold">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p class="font-normal mt-[10px]">
+
+        <div class="flex items-start gap-6">
+          <img src="./img/icon-6.svg" alt="Icon 6" class="w-20 h-20" />
+          <div class="flex flex-col">
+            <h2 class="font-bold text-lg">Lorem ipsum dolor sit amet</h2>
+            <p class="mt-2 text-zinc-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod ut.
             </p>
           </div>
         </div>
-        <div class="flex items-start gap-4">
-          <img src="./img/icon-7.svg" alt="" class="w-20 h-20" />
-          <div class="flex flex-col font-bold">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p class="font-normal mt-[10px]">
+
+        <div class="flex items-start gap-6">
+          <img src="./img/icon-7.svg" alt="Icon 7" class="w-20 h-20" />
+          <div class="flex flex-col">
+            <h2 class="font-bold text-lg">Lorem ipsum dolor sit amet</h2>
+            <p class="mt-2 text-zinc-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod ut.
             </p>
           </div>
         </div>
-        <div class="flex items-start gap-4">
-          <img src="./img/icon-8.svg" alt="" class="w-20 h-20" />
-          <div class="flex flex-col font-bold">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p class="font-normal mt-[10px]">
+
+        <div class="flex items-start gap-6">
+          <img src="./img/icon-8.svg" alt="Icon 8" class="w-20 h-20" />
+          <div class="flex flex-col">
+            <h2 class="font-bold text-lg">Lorem ipsum dolor sit amet</h2>
+            <p class="mt-2 text-zinc-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod ut.
             </p>
@@ -245,181 +256,183 @@
       </div>
     </section>
 
-    <section class="container mx-auto mt-20">
-      <div>
-        <div>
-          <h2 class="font-bold text-5xl mb-[10px]">Выполненные работы</h2>
+    <section class="container mx-auto mt-20 px-4">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="font-bold text-3xl sm:text-4xl lg:text-5xl mb-4">
+          Выполненные работы
+        </h2>
+        <p class="text-gray-500 text-base sm:text-lg">
+          Мы собрали информацию по грузам, которые мы уже доставили. <br />
+          У нас специальный подход к каждому виду товаров.
+        </p>
+      </div>
 
-          <p class="text-gray-500">
-            Мы собрали информацию по грузам, которые мы уже доставили. <br />У
-            нас специальный подход к каждому виду товаров.
-          </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="bg-zinc-50 border border-gray-200 rounded-lg shadow-sm">
+          <a href="#">
+            <img
+              class="rounded-t-lg w-full"
+              src="./img/work-1.svg"
+              alt="Станки и оборудование"
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold text-stone-950">
+                Станки и оборудование
+              </h5>
+            </a>
+            <p class="mb-3 text-gray-700">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300"
+            >
+              20 000 руб.
+              <svg
+                class="w-4 h-4 ms-2"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 14 10"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
 
-        <div class="flex justify-center mt-[30px] gap-30 drop-shadow-xl">
-          <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm bg-stone-200"
-          >
+        <div class="bg-zinc-50 border border-gray-200 rounded-lg shadow-sm">
+          <a href="#">
+            <img
+              class="rounded-t-lg w-full"
+              src="./img/work-2.svg"
+              alt="Станки и оборудование"
+            />
+          </a>
+          <div class="p-5">
             <a href="#">
-              <img class="rounded-t-lg" src="./img/work-1.svg" alt="" />
+              <h5 class="mb-2 text-2xl font-bold text-stone-950">
+                Станки и оборудование
+              </h5>
             </a>
-            <div class="p-5">
-              <a href="#">
-                <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-stone-950"
-                >
-                  Станки и оборудование
-                </h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
-              <a
-                href="#"
-                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            <p class="mb-3 text-gray-700">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300"
+            >
+              18 000 руб.
+              <svg
+                class="w-4 h-4 ms-2"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 14 10"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                20 000 руб.
-                <svg
-                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </a>
-            </div>
+                <path
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
           </div>
+        </div>
 
-          <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm bg-stone-200"
-          >
+        <div class="bg-zinc-50 border border-gray-200 rounded-lg shadow-sm">
+          <a href="#">
+            <img
+              class="rounded-t-lg w-full"
+              src="./img/work-3.svg"
+              alt="Компоненты и запчасти"
+            />
+          </a>
+          <div class="p-5">
             <a href="#">
-              <img class="rounded-t-lg" src="./img/work-2.svg" alt="" />
+              <h5 class="mb-2 text-2xl font-bold text-stone-950">
+                Компоненты и запчасти
+              </h5>
             </a>
-            <div class="p-5">
-              <a href="#">
-                <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-stone-950"
-                >
-                  Станки и оборудование
-                </h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
-              <a
-                href="#"
-                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            <p class="mb-3 text-gray-700">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order.
+            </p>
+            <a
+              href="#"
+              class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300"
+            >
+              20 000 руб.
+              <svg
+                class="w-4 h-4 ms-2"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 14 10"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                18 000 руб.
-                <svg
-                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-
-          <div
-            class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm bg-stone-200"
-          >
-            <a href="#">
-              <img class="rounded-t-lg" src="./img/work-3.svg" alt="" />
+                <path
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </a>
-
-            <div class="p-5">
-              <a href="#">
-                <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-stone-950"
-                >
-                  Компоненты и запчасти
-                </h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
-              <a
-                href="#"
-                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                20 000 руб.
-                <svg
-                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </a>
-            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="container mx-auto mt-20 w- h-2/3 bg-blue-600">
-      <div class="bg-teal-900 relative z-1 h-200">
-        <h1
-          class="font-bold text-5xl absolute top-30 left-20 text-white leading-tight"
-        >
-          Привлеченные<br />
-          клиенты
+    <section class="container mx-auto mt-20 px-4 py-10 rounded-3xl">
+      <div
+        class="relative bg-teal-900 text-white rounded-2xl py-16 px-6 sm:px-10"
+      >
+        <h1 class="font-bold text-3xl sm:text-4xl leading-tight mb-10">
+          Привлеченные <br />клиенты
         </h1>
-        <div class="bg-stone-50 w-220 h-180 absolute left-150 top-10">
-          <div class="absolute top-10 left-10 flex gap-50">
-            <img src="./img/logo.svg" alt="" />
 
-            <p class="text-sm text-gray-500">
+        <div
+          class="bg-stone-50 p-6 sm:p-10 rounded-2xl shadow-lg relative z-10"
+        >
+          <div class="flex flex-col lg:flex-row items-start gap-6 mb-10">
+            <img src="./img/logo.svg" alt="PDV Logo" class="w-20 h-auto" />
+
+            <p class="text-sm text-gray-600">
               ООО "ПДВ" ИНН 7329023100 КПП 732901001 <br />
               433405, Ульяновская обл., Территория Портовой особой <br />
               Экономической зоны, Проезд Первых Резидентов 3 <br />
-              Телефон: +7 8422 99 666 5 e-mail: info@pdv.ooo
+              Телефон: +7 8422 99 666 5 · e-mail: info@pdv.ooo
             </p>
           </div>
 
-          <div class="mt-35">
-            <table class="w-full text-left border-collapse">
-              <tr class="bg-teal-900 text-white">
-                <th class="p-4 border">Фото</th>
-                <th class="p-4 border">Название</th>
-                <th class="p-4 border">Производитель</th>
-                <th class="p-4 border">Контакт</th>
-              </tr>
-
-              <tbody class="text-gray-800">
+          <div class="overflow-x-auto">
+            <table class="min-w-[700px] w-full text-left border-collapse">
+              <thead class="bg-teal-900 text-white">
+                <tr>
+                  <th class="p-4 border">Фото</th>
+                  <th class="p-4 border">Название</th>
+                  <th class="p-4 border">Производитель</th>
+                  <th class="p-4 border">Контакт</th>
+                </tr>
+              </thead>
+              <tbody class="text-gray-800 bg-white">
                 <tr class="border-b">
                   <td class="p-4 align-top">
-                    <img src="./img/grid-1.svg" class="w-81 h-auto" />
+                    <img
+                      src="./img/grid-1.svg"
+                      alt="product"
+                      class="w-20 h-auto"
+                    />
                   </td>
                   <td class="p-4 align-top">
                     <p>
@@ -447,7 +460,7 @@
                     <img
                       src="./img/grid-1.svg"
                       alt="product"
-                      class="w-81 h-auto"
+                      class="w-20 h-auto"
                     />
                   </td>
                   <td class="p-4 align-top">
@@ -474,7 +487,7 @@
                     <img
                       src="./img/grid-1.svg"
                       alt="product"
-                      class="w-81 h-auto"
+                      class="w-20 h-auto"
                     />
                   </td>
                   <td class="p-4 align-top">
@@ -504,89 +517,567 @@
       </div>
     </section>
 
-    <section class="container mx-auto mt-20 mb-25">
-      <h1 class="font-bold text-5xl mb-15">Этапы поставки</h1>
-      <div
-        class="flex flex-col gap-10 items-center w-full max-w-[1200px] mx-auto"
-      >
+    <section class="container mx-auto mt-20 mb-20 px-4">
+      <h1 class="font-bold text-3xl sm:text-4xl lg:text-5xl mb-12 text-start">
+        Этапы поставки
+      </h1>
+
+      <div class="flex flex-col gap-10 items-center w-full max-w-7xl mx-auto">
         <a
           href="#"
-          class="w-full max-w-[800px] h-60 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-none hover:bg-slate-100"
+          class="w-full flex flex-col md:flex-row bg-white border border-gray-200 rounded-xl shadow-sm hover:bg-slate-100 transition duration-300"
         >
           <img
-            class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-70 md:rounded-none md:rounded-s-lg p-3"
             src="./img/postavki-1.svg"
-            alt=""
+            alt="Предложение от продавца"
+            class="object-cover w-full md:w-72 h-60 md:h-auto rounded-t-xl md:rounded-t-none md:rounded-s-xl p-3"
           />
-          <div class="flex flex-col justify-between p-4 leading-normal">
+          <div class="flex flex-col justify-between p-6">
             <h5
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-950 dark:gray-950 border-b-2 border-yellow-500"
+              class="text-2xl font-bold text-gray-900 border-b-2 border-yellow-500 mb-4"
             >
               Предложение от продавца
             </h5>
-
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p class="text-gray-700 text-sm sm:text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit
               duis tristique sollicitudin nibh sit amet. Ultrices eros in cursus
-              turpis massa tincidunt. Venenatis urna cursus eget nunc
-              scelerisque viverra mauris in.
+              turpis massa tincidunt.
             </p>
           </div>
         </a>
 
         <a
           href="#"
-          class="w-full max-w-[800px] h-60 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-none hover:bg-slate-100"
+          class="w-full flex flex-col md:flex-row bg-white border border-gray-200 rounded-xl shadow-sm hover:bg-slate-100 transition duration-300"
         >
           <img
-            class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-70 md:rounded-none md:rounded-s-lg p-3"
             src="./img/delivery.svg"
-            alt=""
+            alt="Доставка"
+            class="object-cover w-full md:w-72 h-60 md:h-auto rounded-t-xl md:rounded-t-none md:rounded-s-xl p-3"
           />
-          <div class="flex flex-col justify-between p-4 leading-normal">
+          <div class="flex flex-col justify-between p-6">
             <h5
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-950 dark:gray-950 border-b-2 border-yellow-500"
+              class="text-2xl font-bold text-gray-900 border-b-2 border-yellow-500 mb-4"
             >
               Доставка
             </h5>
-
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p class="text-gray-700 text-sm sm:text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit
               duis tristique sollicitudin nibh sit amet. Ultrices eros in cursus
-              turpis massa tincidunt. Venenatis urna cursus eget nunc
-              scelerisque viverra mauris in. .
+              turpis massa tincidunt.
             </p>
           </div>
         </a>
 
         <a
           href="#"
-          class="w-full max-w-[800px] h-60 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-none hover:bg-slate-100"
+          class="w-full flex flex-col md:flex-row bg-white border border-gray-200 rounded-xl shadow-sm hover:bg-slate-100 transition duration-300"
         >
           <img
-            class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-70 md:rounded-none md:rounded-s-lg p-3"
             src="./img/install.svg"
-            alt=""
+            alt="Установка у клиента"
+            class="object-cover w-full md:w-72 h-60 md:h-auto rounded-t-xl md:rounded-t-none md:rounded-s-xl p-3"
           />
-          <div class="flex flex-col justify-between p-4 leading-normal">
+          <div class="flex flex-col justify-between p-6">
             <h5
-              class="mb-2 text-2xl font-bold tracking-tight text-gray-950 dark:gray-950 border-b-2 border-yellow-500"
+              class="text-2xl font-bold text-gray-900 border-b-2 border-yellow-500 mb-4"
             >
               Установка у клиента
             </h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p class="text-gray-700 text-sm sm:text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit
               duis tristique sollicitudin nibh sit amet. Ultrices eros in cursus
-              turpis massa tincidunt. Venenatis urna cursus eget nunc
-              scelerisque viverra mauris in.
+              turpis massa tincidunt.
             </p>
           </div>
         </a>
       </div>
     </section>
+
+    <!-- <section class="container mx-auto mt-20">
+      
+      <div>
+        <h2 class="font-bold text-4xl">Нам доверяют</h2>
+      </div>
+
+      <div class="flex justify-center mt-20">
+        <div class="grid grid-cols-2 grid-rows-1 gap-50 self-center">
+          <div class="flex flex-col">
+            <img class="w-20 self-center" src="./img/rosatom.svg" alt="" />
+            <div class="flex flex-col text-center">
+              <h2 class="font-bold mt-5">Росатом</h2>
+              <p>Корпорация атомной энергии</p>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <img class="w-20 self-center" src="./img/gazprom.svg" alt="" />
+            <div class="flex flex-col text-center">
+              <h2 class="font-bold mt-5">Росатом</h2>
+              <p>Корпорация атомной энергии</p>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <img src="./img/rosneft.svg" alt="" />
+            <div class="flex flex-col text-center">
+              <h2 class="font-bold mt-5">Росатом</h2>
+              <p>Корпорация атомной энергии</p>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <img src="./img/roskosmos.svg" alt="" />
+            <div class="flex flex-col text-center">
+              <h2 class="font-bold mt-5">Росатом</h2>
+              <p>Корпорация атомной энергии</p>
+            </div>
+          </div>
+          <div class="row-start-2">
+            <img src="./img/lukoyil.svg" alt="" />
+            <div class="flex flex-col text-center">
+              <h2 class="font-bold mt-5">Росатом</h2>
+              <p>Корпорация атомной энергии</p>
+            </div>
+          </div>
+          <div class="col-start-3 row-start-2">
+            <img src="./img/inter.svg" alt="" />
+            <div class="flex flex-col text-center">
+              <h2 class="font-bold mt-5">Росатом</h2>
+              <p>Корпорация атомной энергии</p>
+            </div>
+          </div>
+          <div class="col-start-2 row-start-2">
+            <img src="./img/rostech.svg" alt="" />
+            <div class="flex flex-col text-center">
+              <h2 class="font-bold mt-5">Росатом</h2>
+              <p>Корпорация атомной энергии</p>
+            </div>
+          </div>
+          <div class="row-start-2">
+            <img src="./img/bank.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <div class="container mx-auto">
+      <h3 class="font-bold text-3xl sm:text-4xl lg:text-5xl mb-12 text-start">
+        Нам доверяют
+      </h3>
+    </div>
+    <section
+      class="bg-white flex items-center justify-center container mx-auto mt-20 border-collapse"
+    >
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-4 gap-30"
+      >
+        <div class="flex flex-col items-center text-center">
+          <img src="./img/rosatom.svg" alt="Rosatom Logo" class="h-16 mb-2" />
+          <h3 class="font-semibold">Росатом</h3>
+          <p class="text-sm text-gray-600">Корпорация атомной энергии</p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img src="./img/gazprom.svg" alt="Gazprom Logo" class="h-16 mb-2" />
+          <h3 class="font-semibold">Газпром</h3>
+          <p class="text-sm text-gray-600">Энергетическая компания</p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img src="./img/rosneft.svg" alt="Rosneft Logo" class="h-16 mb-2" />
+          <h3 class="font-semibold">Роснефть</h3>
+          <p class="text-sm text-gray-600">Нефтяная компания</p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img
+            src="./img/roskosmos.svg"
+            alt="Roskosmos Logo"
+            class="h-16 mb-2"
+          />
+          <h3 class="font-semibold">Роскосмос</h3>
+          <p class="text-sm text-gray-600">Корпорация в космической отрасли</p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img src="./img/lukoyil.svg" alt="Lukoil Logo" class="h-16 mb-2" />
+          <h3 class="font-semibold">Лукойл</h3>
+          <p class="text-sm text-gray-600">Нефтяная компания</p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img src="./img/inter.svg" alt="Inter RAO Logo" class="h-16 mb-2" />
+          <h3 class="font-semibold">Интер РАО</h3>
+          <p class="text-sm text-gray-600">Энергетическая компания</p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img src="./img/rostech.svg" alt="Rostec Logo" class="h-16 mb-2" />
+          <h3 class="font-semibold">Ростех</h3>
+          <p class="text-sm text-gray-600">Промышленная корпорация</p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img src="./img/bank.svg" alt="VTB Logo" class="h-16 mb-2" />
+          <h3 class="font-semibold">Банк ВТБ</h3>
+          <p class="text-sm text-gray-600">Коммерческий банк</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container mx-auto mt-20">
+      <h3 class="font-bold text-3xl sm:text-4xl lg:text-5xl mb-12 text-start">
+        Сотрудники компании
+      </h3>
+    </div>
+
+    <section class="container mx-auto px-4 mt-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div class="relative bg-teal-900 h-[250px] rounded-lg overflow-hidden">
+          <div
+            class="absolute right-0 top-0 h-full w-[90%] bg-gray-100 rounded-l-lg flex items-center px-6 sm:px-8"
+          >
+            <div
+              class="flex items-center gap-4 sm:gap-6 w-full flex-wrap sm:flex-nowrap"
+            >
+              <img
+                src="./img/anton.svg"
+                alt="Антон Макаров"
+                class="w-[138px] h-[138px] rounded-full object-cover"
+              />
+
+              <div>
+                <h2 class="text-xl font-bold text-gray-800 mb-1">
+                  Антон Макаров
+                </h2>
+
+                <p
+                  class="text-gray-500 border-b-4 border-yellow-500 inline-block pb-1"
+                >
+                  Руководитель компании
+                </p>
+
+                <div class="flex gap-4 mt-12 items-center">
+                  <img src="./img/instagram.svg" />
+                  <img src="./img/vk.svg" />
+                  <img src="./img/linkedin.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative bg-teal-900 h-[250px] rounded-lg overflow-hidden">
+          <div
+            class="absolute right-0 top-0 h-full w-[90%] bg-gray-100 rounded-l-lg flex items-center px-8"
+          >
+            <div class="flex items-center gap-6 w-full">
+              <img
+                src="./img/Elena.svg"
+                alt="Антон Макаров"
+                class="w-[138px] h-[138px] rounded-full object-cover"
+              />
+
+              <div>
+                <h2 class="text-xl font-bold text-gray-800 mb-1">
+                  Антон Макаров
+                </h2>
+
+                <p
+                  class="text-gray-500 border-b-4 border-yellow-500 inline-block pb-1"
+                >
+                  Руководитель компании
+                </p>
+
+                <div class="flex gap-4 mt-12 items-center">
+                  <img src="./img/instagram.svg" />
+                  <img src="./img/vk.svg" />
+                  <img src="./img/linkedin.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative bg-teal-900 h-[250px] rounded-lg overflow-hidden">
+          <div
+            class="absolute right-0 top-0 h-full w-[90%] bg-gray-100 rounded-l-lg flex items-center px-8"
+          >
+            <div class="flex items-center gap-6 w-full">
+              <img
+                src="./img/Ivan.svg"
+                alt="Антон Макаров"
+                class="w-[138px] h-[138px] rounded-full object-cover"
+              />
+
+              <div>
+                <h2 class="text-xl font-bold text-gray-800 mb-1">
+                  Антон Макаров
+                </h2>
+
+                <p
+                  class="text-gray-500 border-b-4 border-yellow-500 inline-block pb-1"
+                >
+                  Руководитель компании
+                </p>
+
+                <div class="flex gap-4 mt-12 items-center">
+                  <img src="./img/instagram.svg" />
+                  <img src="./img/vk.svg" />
+                  <img src="./img/linkedin.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative bg-teal-900 h-[250px] rounded-lg overflow-hidden">
+          <div
+            class="absolute right-0 top-0 h-full w-[90%] bg-gray-100 rounded-l-lg flex items-center px-8"
+          >
+            <div class="flex items-center gap-6 w-full">
+              <img
+                src="./img/boris.svg"
+                alt="Антон Макаров"
+                class="w-[138px] h-[138px] rounded-full object-cover"
+              />
+
+              <div>
+                <h2 class="text-xl font-bold text-gray-800 mb-1">
+                  Антон Макаров
+                </h2>
+
+                <p
+                  class="text-gray-500 border-b-4 border-yellow-500 inline-block pb-1"
+                >
+                  Руководитель компании
+                </p>
+
+                <div class="flex gap-4 mt-12 items-center">
+                  <img src="./img/instagram.svg" />
+                  <img src="./img/vk.svg" />
+                  <img src="./img/linkedin.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative bg-teal-900 h-[250px] rounded-lg overflow-hidden">
+          <div
+            class="absolute right-0 top-0 h-full w-[90%] bg-gray-100 rounded-l-lg flex items-center px-8"
+          >
+            <div class="flex items-center gap-6 w-full">
+              <img
+                src="./img/alina.svg"
+                alt="Антон Макаров"
+                class="w-[138px] h-[138px] rounded-full object-cover"
+              />
+
+              <div>
+                <h2 class="text-xl font-bold text-gray-800 mb-1">
+                  Антон Макаров
+                </h2>
+
+                <p
+                  class="text-gray-500 border-b-4 border-yellow-500 inline-block pb-1"
+                >
+                  Руководитель компании
+                </p>
+
+                <div class="flex gap-4 mt-12 items-center">
+                  <img src="./img/instagram.svg" />
+                  <img src="./img/vk.svg" />
+                  <img src="./img/linkedin.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative bg-teal-900 h-[250px] rounded-lg overflow-hidden">
+          <div
+            class="absolute right-0 top-0 h-full w-[90%] bg-gray-100 rounded-l-lg flex items-center px-8"
+          >
+            <div class="flex items-center gap-6 w-full">
+              <img
+                src="./img/viktor.svg"
+                alt="Антон Макаров"
+                class="w-[138px] h-[138px] rounded-full object-cover"
+              />
+
+              <div>
+                <h2 class="text-xl font-bold text-gray-800 mb-1">
+                  Антон Макаров
+                </h2>
+
+                <p
+                  class="text-gray-500 border-b-4 border-yellow-500 inline-block pb-1"
+                >
+                  Руководитель компании
+                </p>
+
+                <div class="flex gap-4 mt-12 items-center">
+                  <img src="./img/instagram.svg" />
+                  <img src="./img/vk.svg" />
+                  <img src="./img/linkedin.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mx-auto mt-20 px-4">
+      <div>
+        <h2 class="font-bold text-3xl sm:text-4xl lg:text-5xl mb-12 text-start">
+          Этапы поставки
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div class="p-6 sm:p-10 gap-6 flex flex-col">
+          <div class="flex items-start gap-4">
+            <img src="./img/phone.svg" alt="Phone icon" class="w-6 h-6 mt-1" />
+            <div>
+              <span class="text-sm text-gray-500">Телефон</span>
+              <p class="text-lg font-semibold text-gray-800">
+                +7 8422 99 666 5
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <img src="./img/email.svg" alt="Email icon" class="w-6 h-6 mt-1" />
+            <div>
+              <span class="text-sm text-gray-500">E-mail</span>
+              <p class="text-lg font-semibold text-gray-800">info@pdv.ooo</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <img
+              src="./img/whatsapp.svg"
+              alt="WhatsApp icon"
+              class="w-6 h-6 mt-1"
+            />
+            <div>
+              <span class="text-sm text-gray-500">WhatsApp</span>
+              <p class="text-lg font-semibold text-gray-800">
+                +7 8422 99 666 5
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <img src="./img/skype.svg" alt="Skype icon" class="w-6 h-6 mt-1" />
+            <div>
+              <span class="text-sm text-gray-500">Skype</span>
+              <p class="text-lg font-semibold text-gray-800">pdv.skype</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gray-200 p-6 sm:p-10 rounded-lg w-full">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-[180px_1fr] gap-y-4 gap-x-6 text-gray-800 text-sm"
+          >
+            <p class="font-semibold">Полное наименование:</p>
+            <p>ООО "Поставщик Дальнего Востока"</p>
+
+            <p class="font-semibold">ИНН:</p>
+            <p>7329023100</p>
+
+            <p class="font-semibold">КПП:</p>
+            <p>732901001</p>
+
+            <p class="font-semibold">ОГРН:</p>
+            <p>1167325074762</p>
+
+            <p class="font-semibold">Адрес:</p>
+            <p>
+              Россия, Ульяновская обл., территория Портовой Особой Экономической
+              Зоны,<br />
+              проезд Первых Резидентов, дом 3
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mx-auto mt-20 px-4">
+      <div class="flex justify-center w-full">
+        <iframe
+          class="w-full aspect-video rounded-lg shadow-lg"
+          src="https://www.youtube.com/embed/ZOZOqbK86t0?autoplay=1&mute=1&loop=1&playlist=ZOZOqbK86t0&controls=0&modestbranding=1&rel=0&disablekb=1&iv_load_policy=3"
+          title="Scenic Drive"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="mt-20 bg-emerald-900 w-full">
+      <div
+        class="container mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-white"
+      >
+        <div>
+          <img src="./img/LOGO-foot.svg" alt="" />
+        </div>
+        <div class="flex flex-col gap-8 sm:px-20">
+          <p>Каталог</p>
+          <p>O компании</p>
+          <p>Индивидуальная</p>
+          <p>Партнерам</p>
+        </div>
+        <div class="flex flex-col gap-8">
+          <p>2D, 3D модели</p>
+          <p>Шоу-румы</p>
+          <p>Дилерам</p>
+          <p>Контакты</p>
+          <p>Конфигуратор</p>
+        </div>
+        <div class="flex flex-col gap-4 items-start">
+          <div
+            class="w-10 h-10 bg-emerald-900 rounded-full border-2 border-white"
+          ></div>
+          <div
+            class="w-10 h-10 bg-emerald-900 rounded-full border-2 border-white"
+          ></div>
+
+          <div class="flex flex-col">
+            <button
+              type="button"
+              class="w-90 text-white focus:ring-4 font-medium text-sm p-5 text-center inline-flex items-center bg-yellow-600"
+            >
+              EMAIL
+              <svg
+                class="rtl:rotate-180 w-3.5 h-3.5 ml-65"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center text-white p-5">
+        <p>© 1993–2021 Интернет-магазин «LOGO» — truck</p>
+      </div>
+    </footer>
 
     <button
       id="backToTop"
